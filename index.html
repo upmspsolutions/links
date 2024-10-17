@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UPMSP Solutions - Landing Page</title>
+
+    <!-- Google Font - Halant -->
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            color: #333;
+        }
+        h1, h2, p {
+            margin: 0 0 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            font-weight: 600;
+            text-align: center;
+        }
+        h2 {
+            font-size: 22px;
+            color: #34495e;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* Container */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Button Styles */
+        .button {
+            text-decoration: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #833ab4); }
+        .facebook { background-color: #3b5998; }
+        .youtube { background-color: #ff0000; }
+        .whatsapp { background-color: #25D366; }
+        .telegram { background-color: #0088cc; }
+        .free-tests { background-color: #28a745; }
+        .paid-tests { background-color: #007bff; }
+        .quizzes { background-color: #f39c12; }
+        .important-questions { background-color: #ff5722; }
+        .study-notes { background-color: #16a085; }
+
+        /* Topper Section */
+        .topper-section {
+            margin-top: 30px;
+        }
+        .topper {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .topper img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .topper p {
+            margin: 8px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .topper span {
+            display: block;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+
+        /* Footer Styles */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #95a5a6;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* Section Styles */
+        .section {
+            margin-top: 20px;
+            border-top: 2px solid #e2e2e2;
+            padding-top: 15px;
+        }
+
+        /* Scrolling text style */
+        marquee {
+            font-family: 'Halant', serif;
+            font-weight: bold;
+            color: red;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to UPMSP Solutions</h1>
+        <p>Your trusted resource for board exam preparation</p><br>
+        
+        <!-- Scrolling News Section -->
+        <marquee behavior="scroll" direction="left" scrollamount="6" style="color: #FF5722;">
+            <b>किसी भी प्रकार की सहायता हेतु आप हमें इंस्टाग्राम या टेलीग्राम पर मैसेज कर सकते हैं।</b>
+        </marquee>
+        
+        <!-- Topper of the Month Section -->
+        <div class="topper-section">
+            <h2>Dhurandhars of the Month</h2>
+            <div class="topper">
+                <img src="https://i.postimg.cc/zBDN2XGz/20241009-152356.jpg" alt="Student 1">
+                <p>XYZ <span>95%</span></p>
+            </div>
+            <div class="topper">
+                <img src="https://i.postimg.cc/cCGdMqbZ/20241009-152747.jpg" alt="Student 2">
+                <p>ABC<span>93%</span></p>
+            </div>
+            <div class="topper">
+                <img src="https://i.postimg.cc/zBDN2XGz/20241009-152356.jpg" alt="Student 3">
+                <p>XYZ<span>92%</span></p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="section">
+            <h2>Connect with Us</h2>
+            <a href="https://instagram.com/upmspsolutions" class="button instagram">Follow Us on Instagram</a>
+            <a href="https://facebook.com/yourfacebookpage" class="button facebook">Like Us on Facebook</a>
+            <a href="https://youtube.com/@upmspsolutions?si=ATq-iOd7JK_10POJ" class="button youtube">Subscribe Our YouTube Channel</a>
+            <a href="https://whatsapp.com/channel/0029Va8wRfA0VycPH1TJeI14" class="button whatsapp">Join Our WhatsApp Channel</a>
+            <a href="https://telegram.me/upmsp_solutions" class="button telegram">Join Our Telegram Channel</a>
+        </div>
+
+        <!-- Study Materials and Test Series Section -->
+        <div class="section">
+            <h2>Study Materials & Test Series</h2>
+
+            <h3>Class 9th</h3>
+            <a href="free-test-series-9th.html" class="button free-tests">Free Test Series</a>
+            <a href="paid-test-series-9th.html" class="button paid-tests">Paid Test Series</a>
+            <a href="previous-year-papers-9th.html" class="button quizzes">Download Previous Year Papers</a>
+            <a href="study-notes-9th.html" class="button study-notes">Get Study Notes</a>
+            <a href="important-questions-9th.html" class="button important-questions">View Important Questions</a>
+
+            <h3>Class 10th</h3>
+            <a href="free-test-series-10th.html" class="button free-tests">Free Test Series</a>
+            <a href="paid-test-series-10th.html" class="button paid-tests">Paid Test Series</a>
+            <a href="previous-year-papers-10th.html" class="button quizzes">Download Previous Year Papers</a>
+            <a href="study-notes-10th.html" class="button study-notes">Get Study Notes</a>
+            <a href="important-questions-10th.html" class="button important-questions">View Important Questions</a>
+
+            <h3>Class 11th</h3>
+            <a href="free-test-series-11th.html" class="button free-tests">Free Test Series</a>
+            <a href="paid-test-series-11th.html" class="button paid-tests">Paid Test Series</a>
+            <a href="previous-year-papers-11th.html" class="button quizzes">Download Previous Year Papers</a>
+            <a href="study-notes-11th.html" class="button study-notes">Get Study Notes</a>
+            <a href="important-questions-11th.html" class="button important-questions">View Important Questions</a>
+
+            <h3>Class 12th</h3>
+            <a href="free-test-series-12th.html" class="button free-tests">Free Test Series</a>
+            <a href="paid-test-series-12th.html" class="button paid-tests">Paid Test Series</a>
+            <a href="previous-year-papers-12th.html" class="button quizzes">Download Previous Year Papers</a>
+            <a href="study-notes-12th.html" class="button study-notes">Get Study Notes</a>
+            <a href="important-questions-12th.html" class="button important-questions">View Important Questions</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 UPMSP Solutions. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+              </html>
+              
